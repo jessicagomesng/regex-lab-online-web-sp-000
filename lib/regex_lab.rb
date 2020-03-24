@@ -1,7 +1,7 @@
 def starts_with_a_vowel?(word)
-  if word.scan(/^[aeiouAEIOU]/)
+  if word.match(/^[aeiouAEIOU]/)
     true
-  elsif !word.scan(/^[aeiouAEIOU]/)
+  elsif !word.match(/^[aeiouAEIOU]/)
     false
   end
 end
@@ -11,7 +11,7 @@ def words_starting_with_un_and_ending_with_ing(text)
 end
 
 def words_five_letters_long(text)
-
+  text.scan(/)
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
